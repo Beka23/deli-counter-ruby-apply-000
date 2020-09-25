@@ -4,7 +4,7 @@ katz_deli = []
 
 def line(katz_deli)
   positions = []
-  if katz_deli.length != 0 #not empty 
+  if katz_deli.length != 0  #NOT EMPTY  
     counter = 1
     katz_deli.each  do |name|
       positions << "#{counter}. #{name}"
@@ -35,8 +35,18 @@ def now_serving(katz_deli)
       puts "Currently serving #{katz_deli.first}." 
       katz_deli.shift
   else
-    puts "There is nobody waiting to be served!"
+      puts "There is nobody waiting to be served!"
   end
+end
+
+
+number = 0  
+ 
+def take_a_number(katz_deli)
+  
+  number += 1 
+  katz_deli << number 
+ 
 end
 
 
